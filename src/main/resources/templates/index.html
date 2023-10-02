@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<head th:replace="fragments :: head"></head>
 <body>
 <!--This template could contain a single link to /events.-->
 <h1>Coding Events</h1>
 <!--Within the new template, loop over the events object and display the name of each event.-->
-<nav>
-    <ul>
-        <li><a href="/events">All Events</a></li>
-    </ul>
-</nav>
+<!--<nav>-->
+<!--    <ul>-->
+<!--        <li><a href="/events">All Events</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+<header th:replace="fragments :: header"></header>
 </body>
 </html>
+
